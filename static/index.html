@@ -18,14 +18,33 @@
     <meta name="keywords" content="">
 
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js "></script>
     <!-- styles -->
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.css" rel="stylesheet">
+    <script src="controllers/home-controller,js"></script>
+    <script src="controllers/category-controller,js"></script>
+    <script type="text/javascript">
+        var app = angular.module("WebProgramingProject", ["ngRoute"]);
+        
+        app.contoller('homeController', HomeController);
+        app.contoller('categoryController', CategoryController);
 
+        app.config(function($routeProvider){
+            $routeProvider
+            .when("/", {templateUrl : "views/index.html",
+            contoller : "homeController"
+        })
+        .when("/category", {
+            templateUrl : "views/category.html",
+            contoller : "categoryController"
+        })
+        });
+    </script>
     <!-- theme stylesheet -->
     <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
 
@@ -40,7 +59,7 @@
 
 </head>
 
-<body>
+<body ng-app="WebDesignProject">
 
     <!-- *** TOPBAR ***
  _________________________________________________________ -->
@@ -127,7 +146,7 @@
             <div class="navbar-collapse collapse" id="navigation">
 
                 <ul class="nav navbar-nav navbar-left">
-                    <li class="active"><a href="index.html">Home</a>
+                    <li class="active"><a href="#!home">Home</a>
                     </li>
                     <li class="dropdown yamm-fw">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Men <b class="caret"></b></a>
@@ -138,7 +157,7 @@
                                         <div class="col-sm-3">
                                             <h5>Clothing</h5>
                                             <ul>
-                                                <li><a href="category.html">T-shirts</a>
+                                                <li><a href="#!category">T-shirts</a>
                                                 </li>
                                                 <li><a href="category.html">Shirts</a>
                                                 </li>
@@ -408,7 +427,7 @@
 
         <div id="content">
 
-            <div class="container">
+            <div class="container" ng-view>
                 <div class="col-md-12">
                     <div id="main-slider">
                         <div class="item">

@@ -26,8 +26,8 @@
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.css" rel="stylesheet">
-    <script src="controllers/home-controller,js"></script>
-    <script src="controllers/category-controller,js"></script>
+    <script src="controllers/home-controller.js"></script>
+    <script src="controllers/category-controller.js"></script>
     <script type="text/javascript">
         var app = angular.module("WebProgramingProject", ["ngRoute"]);
         
@@ -61,60 +61,7 @@
 
 <body ng-app="WebDesignProject">
 
-    <!-- *** TOPBAR ***
- _________________________________________________________ -->
-    <div id="top">
-        <div class="container">
-            <div class="col-md-6 offer" data-animate="fadeInDown">
-                <a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">Offer of the day</a>  <a href="#">Get flat 35% off on orders over $50!</a>
-            </div>
-            <div class="col-md-6" data-animate="fadeInDown">
-                <ul class="menu">
-                    <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
-                    </li>
-                    <li><a href="register.html">Register</a>
-                    </li>
-                    <li><a href="contact.html">Contact</a>
-                    </li>
-                    <li><a href="#">Recently viewed</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
 
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="Login">Customer login</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form action="customer-orders.html" method="post">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="email-modal" placeholder="email">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="password-modal" placeholder="password">
-                            </div>
-
-                            <p class="text-center">
-                                <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
-                            </p>
-
-                        </form>
-
-                        <p class="text-center text-muted">Not registered yet?</p>
-                        <p class="text-center text-muted"><a href="register.html"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- *** TOP BAR END *** -->
 
     <!-- *** NAVBAR ***
  _________________________________________________________ -->
@@ -149,234 +96,74 @@
                     <li class="active"><a href="#!home">Home</a>
                     </li>
                     <li class="dropdown yamm-fw">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Men <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Categories <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <div class="yamm-content">
                                     <div class="row">
                                         <div class="col-sm-3">
-                                            <h5>Clothing</h5>
+                                            
                                             <ul>
-                                                <li><a href="#!category">T-shirts</a>
+                                                <li><a href="#!category">Action</a>
                                                 </li>
-                                                <li><a href="category.html">Shirts</a>
+                                                <li><a href="category.html">Sports</a>
                                                 </li>
-                                                <li><a href="category.html">Pants</a>
+                                                <li><a href="category.html">Multyplayer</a>
                                                 </li>
-                                                <li><a href="category.html">Accessories</a>
+                                                <li><a href="category.html">FPS</a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="col-sm-3">
-                                            <h5>Shoes</h5>
+                                            
                                             <ul>
-                                                <li><a href="category.html">Trainers</a>
-                                                </li>
-                                                <li><a href="category.html">Sandals</a>
-                                                </li>
-                                                <li><a href="category.html">Hiking shoes</a>
-                                                </li>
-                                                <li><a href="category.html">Casual</a>
-                                                </li>
+                                                <li><a href="category.html">Strategy</a>
+                                                </li>                                                
                                             </ul>
                                         </div>
-                                        <div class="col-sm-3">
-                                            <h5>Accessories</h5>
-                                            <ul>
-                                                <li><a href="category.html">Trainers</a>
-                                                </li>
-                                                <li><a href="category.html">Sandals</a>
-                                                </li>
-                                                <li><a href="category.html">Hiking shoes</a>
-                                                </li>
-                                                <li><a href="category.html">Casual</a>
-                                                </li>
-                                                <li><a href="category.html">Hiking shoes</a>
-                                                </li>
-                                                <li><a href="category.html">Casual</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <h5>Featured</h5>
-                                            <ul>
-                                                <li><a href="category.html">Trainers</a>
-                                                </li>
-                                                <li><a href="category.html">Sandals</a>
-                                                </li>
-                                                <li><a href="category.html">Hiking shoes</a>
-                                                </li>
-                                            </ul>
-                                            <h5>Looks and trends</h5>
-                                            <ul>
-                                                <li><a href="category.html">Trainers</a>
-                                                </li>
-                                                <li><a href="category.html">Sandals</a>
-                                                </li>
-                                                <li><a href="category.html">Hiking shoes</a>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <!-- /.yamm-content -->
                             </li>
                         </ul>
+                    </li>
+                    <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
                     </li>
 
-                    <li class="dropdown yamm-fw">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Ladies <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <div class="yamm-content">
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <h5>Clothing</h5>
-                                            <ul>
-                                                <li><a href="category.html">T-shirts</a>
-                                                </li>
-                                                <li><a href="category.html">Shirts</a>
-                                                </li>
-                                                <li><a href="category.html">Pants</a>
-                                                </li>
-                                                <li><a href="category.html">Accessories</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <h5>Shoes</h5>
-                                            <ul>
-                                                <li><a href="category.html">Trainers</a>
-                                                </li>
-                                                <li><a href="category.html">Sandals</a>
-                                                </li>
-                                                <li><a href="category.html">Hiking shoes</a>
-                                                </li>
-                                                <li><a href="category.html">Casual</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <h5>Accessories</h5>
-                                            <ul>
-                                                <li><a href="category.html">Trainers</a>
-                                                </li>
-                                                <li><a href="category.html">Sandals</a>
-                                                </li>
-                                                <li><a href="category.html">Hiking shoes</a>
-                                                </li>
-                                                <li><a href="category.html">Casual</a>
-                                                </li>
-                                                <li><a href="category.html">Hiking shoes</a>
-                                                </li>
-                                                <li><a href="category.html">Casual</a>
-                                                </li>
-                                            </ul>
-                                            <h5>Looks and trends</h5>
-                                            <ul>
-                                                <li><a href="category.html">Trainers</a>
-                                                </li>
-                                                <li><a href="category.html">Sandals</a>
-                                                </li>
-                                                <li><a href="category.html">Hiking shoes</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="banner">
-                                                <a href="#">
-                                                    <img src="img/banner.jpg" class="img img-responsive" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="banner">
-                                                <a href="#">
-                                                    <img src="img/banner2.jpg" class="img img-responsive" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+            
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="Login">Customer login</h4>
                                 </div>
-                                <!-- /.yamm-content -->
-                            </li>
-                        </ul>
-                    </li>
+                                <div class="modal-body">
+                                    <form action="customer-orders.html" method="post">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="email-modal" placeholder="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="password-modal" placeholder="password">
+                                        </div>
+            
+                                        <p class="text-center">
+                                            <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
+                                        </p>
+            
+                                    </form>
+            
+                                    <p class="text-center text-muted">Not registered yet?</p>
+                                    <p class="text-center text-muted"><a href="register.html"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <li class="dropdown yamm-fw">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Template <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <div class="yamm-content">
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <h5>Shop</h5>
-                                            <ul>
-                                                <li><a href="index.html">Homepage</a>
-                                                </li>
-                                                <li><a href="category.html">Category - sidebar left</a>
-                                                </li>
-                                                <li><a href="category-right.html">Category - sidebar right</a>
-                                                </li>
-                                                <li><a href="category-full.html">Category - full width</a>
-                                                </li>
-                                                <li><a href="detail.html">Product detail</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <h5>User</h5>
-                                            <ul>
-                                                <li><a href="register.html">Register / login</a>
-                                                </li>
-                                                <li><a href="customer-orders.html">Orders history</a>
-                                                </li>
-                                                <li><a href="customer-order.html">Order history detail</a>
-                                                </li>
-                                                <li><a href="customer-wishlist.html">Wishlist</a>
-                                                </li>
-                                                <li><a href="customer-account.html">Customer account / change password</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <h5>Order process</h5>
-                                            <ul>
-                                                <li><a href="basket.html">Shopping cart</a>
-                                                </li>
-                                                <li><a href="checkout1.html">Checkout - step 1</a>
-                                                </li>
-                                                <li><a href="checkout2.html">Checkout - step 2</a>
-                                                </li>
-                                                <li><a href="checkout3.html">Checkout - step 3</a>
-                                                </li>
-                                                <li><a href="checkout4.html">Checkout - step 4</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <h5>Pages and blog</h5>
-                                            <ul>
-                                                <li><a href="blog.html">Blog listing</a>
-                                                </li>
-                                                <li><a href="post.html">Blog Post</a>
-                                                </li>
-                                                <li><a href="faq.html">FAQ</a>
-                                                </li>
-                                                <li><a href="text.html">Text page</a>
-                                                </li>
-                                                <li><a href="text-right.html">Text page - right sidebar</a>
-                                                </li>
-                                                <li><a href="404.html">404 page</a>
-                                                </li>
-                                                <li><a href="contact.html">Contact</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /.yamm-content -->
-                            </li>
-                        </ul>
-                    </li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
 
             </div>
@@ -500,7 +287,7 @@
                 <div class="box">
                     <div class="container">
                         <div class="col-md-12">
-                            <h2>Hot this week</h2>
+                            <h2>Most Popular Games</h2>
                         </div>
                     </div>
                 </div>
@@ -791,89 +578,9 @@
 
             <!-- *** HOT END *** -->
 
-            <!-- *** GET INSPIRED ***
- _________________________________________________________ -->
-            <div class="container" data-animate="fadeInUpBig">
-                <div class="col-md-12">
-                    <div class="box slideshow">
-                        <h3>Get Inspired</h3>
-                        <p class="lead">Get the inspiration from our world class designers</p>
-                        <div id="get-inspired" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <a href="#">
-                                    <img src="img/getinspired1.jpg" alt="Get inspired" class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#">
-                                    <img src="img/getinspired2.jpg" alt="Get inspired" class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#">
-                                    <img src="img/getinspired3.jpg" alt="Get inspired" class="img-responsive">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- *** GET INSPIRED END *** -->
+            
 
-            <!-- *** BLOG HOMEPAGE ***
- _________________________________________________________ -->
-
-            <div class="box text-center" data-animate="fadeInUp">
-                <div class="container">
-                    <div class="col-md-12">
-                        <h3 class="text-uppercase">From our blog</h3>
-
-                        <p class="lead">What's new in the world of fashion? <a href="blog.html">Check our blog!</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-
-                <div class="col-md-12" data-animate="fadeInUp">
-
-                    <div id="blog-homepage" class="row">
-                        <div class="col-sm-6">
-                            <div class="post">
-                                <h4><a href="post.html">Fashion now</a></h4>
-                                <p class="author-category">By <a href="#">John Slim</a> in <a href="">Fashion and style</a>
-                                </p>
-                                <hr>
-                                <p class="intro">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-                                    ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                                <p class="read-more"><a href="post.html" class="btn btn-primary">Continue reading</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <div class="post">
-                                <h4><a href="post.html">Who is who - example blog post</a></h4>
-                                <p class="author-category">By <a href="#">John Slim</a> in <a href="">About Minimal</a>
-                                </p>
-                                <hr>
-                                <p class="intro">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-                                    ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                                <p class="read-more"><a href="post.html" class="btn btn-primary">Continue reading</a>
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <!-- /#blog-homepage -->
-                </div>
-            </div>
-            <!-- /.container -->
-
-            <!-- *** BLOG HOMEPAGE END *** -->
-
+         
 
         </div>
         <!-- /#content -->
@@ -1022,7 +729,7 @@
         <div id="copyright">
             <div class="container">
                 <div class="col-md-6">
-                    <p class="pull-left">© 2015 Your name goes here.</p>
+                    <p class="pull-left">© 2018 WebProgramingProject - Developed by Meldin Šljivić</p>
 
                 </div>
                 <div class="col-md-6">

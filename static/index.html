@@ -46,6 +46,15 @@
         app.controller('homeController', HomeController);
         app.controller('registerController', RegisterController);
         app.controller('contactController', ContactController);
+        app.controller('categoryController', ContactController);
+        app.controller('errorController', ErrorController);
+        app.controller('basketController', BasketController);
+        app.controller('blogController', BlogController);
+        app.controller('customerAccountController', CustomerAccountController);
+        app.controller('customerOrderController', CustomerOrderController);
+        app.controller('customerOrdersController', CustomerOrdersController);
+        app.controller('customerWishlistController', CustomerWishlistController);
+        app.controller('detailController', DetailController);
 
         app.config(function($routeProvider){
             $routeProvider
@@ -53,7 +62,7 @@
             contoller : "homeController"
         })
         .when("/category", {
-            templateUrl : "views/category.html",
+            templateUrl : "category.html",
             contoller : "categoryController"
         })
         .when("/register", {
@@ -63,6 +72,38 @@
         .when("/contact", {
             templateUrl : "contact.html",
             contoller : "contactController"
+        })
+        .when("/404", {
+            templateUrl : "error.html",
+            contoller : "errorController"
+        })
+        .when("/basket", {
+            templateUrl : "basket.html",
+            contoller : "basketController"
+        })
+        .when("/blog", {
+            templateUrl : "blog.html",
+            contoller : "blogController"
+        })
+        .when("/account", {
+            templateUrl : "customer-account.html",
+            contoller : "customerAccountController"
+        })
+        .when("/order", {
+            templateUrl : "customer-order.html",
+            contoller : "customerOrderController"
+        })
+        .when("/orders", {
+            templateUrl : "customer-orders.html",
+            contoller : "customerOrdersController"
+        })
+        .when("/wishlist", {
+            templateUrl : "customer-wishlist.html",
+            contoller : "customerWishlistController"
+        })
+        .when("/detail", {
+            templateUrl : "detail.html",
+            contoller : "detailController"
         })
         });
     </script>

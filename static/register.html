@@ -13,21 +13,21 @@
 
                         <hr>
 
-                        <form action="customer-orders.html" method="post">
+                        <form name="register_form" >
                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name">
+                                <input type="text" ng-model="user.name" class="form-control" id="name">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="text" class="form-control" id="email">
+                                <input type="text" ng-model="user.email" class="form-control" id="email">
                             </div>
                             <div class="form-group">
                                 <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password">
+                                <input type="password" ng-model="user.password" class="form-control" id="password">
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-user-md"></i> Register</button>
+                                <button  ng-click="add_user()" class="btn btn-primary"><i class="fa fa-user-md"></i> Register</button>
                             </div>
                         </form>
                     </div>
@@ -43,7 +43,7 @@
 
                         <hr>
 
-                        <form action="customer-orders.html" method="post">
+                        <form name="login_form" method="post">
                             <div class="form-group">
                                 <label for="email">Email</label>
                                 <input type="text" class="form-control" id="email">
